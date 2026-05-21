@@ -7,9 +7,6 @@ export default defineGkdApp({
     {
       key: 1,
       name: '开屏广告',
-      // matchTime: 10000, // 可能出现多次 https://github.com/AIsouler/GKD_subscription/issues/1376
-      // actionMaximum: 1,
-      // resetMatch: 'app',
       priorityTime: 10000,
       rules: [
         {
@@ -17,6 +14,11 @@ export default defineGkdApp({
           matches: '[vid="jump"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/10dd2d8b-e48a-4554-a748-c9e156b003d9',
           snapshotUrls: 'https://i.gkd.li/i/23294048',
+        },
+        {
+          fastQuery: true,
+          activityIds: 'com.jdd.newjdd.app.activity.SplashActivity',
+          matches: '[text*="跳过"][clickable=true]',
         },
       ],
     },
@@ -37,13 +39,6 @@ export default defineGkdApp({
           matches: '[visibleToUser=true]',
           action: 'back',
         },
-        // {
-        //   fastQuery: true,
-        //   activityIds: ['com.jdd.newjdd.app.activity.SplashActivity'],
-        //   matches: '[visibleToUser=true]',
-        //   actionDelay: 1000,
-        //   action: 'back',
-        // },
       ],
     },
   ],
