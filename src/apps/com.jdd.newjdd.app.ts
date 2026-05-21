@@ -18,7 +18,8 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: 'com.jdd.newjdd.app.activity.SplashActivity',
-          matches: '[text*="跳过"][clickable=true]',
+          matchDelay: 1000,
+          action: 'back',
         },
       ],
     },
@@ -32,12 +33,6 @@ export default defineGkdApp({
           matches: '[vid="iv_close"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/557eefdd-fd75-4a93-8f68-6ae8f042270a',
           snapshotUrls: 'https://i.gkd.li/i/23294049',
-        },
-        {
-          fastQuery: true,
-          activityIds: ['.activity.PopupPushActivity'],
-          matches: '[visibleToUser=true]',
-          action: 'back',
         },
       ],
     },
