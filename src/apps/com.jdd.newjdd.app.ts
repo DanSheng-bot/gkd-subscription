@@ -33,11 +33,15 @@ export default defineGkdApp({
         },
         {
           fastQuery: true,
-          activityIds: [
-            '.activity.PopupPushActivity',
-            'com.jdd.newjdd.app.activity.SplashActivity',
-          ],
+          activityIds: ['.activity.PopupPushActivity'],
           matches: '[visibleToUser=true]',
+          action: 'back',
+        },
+        {
+          fastQuery: true,
+          activityIds: ['com.jdd.newjdd.app.activity.SplashActivity'],
+          matches: '[visibleToUser=true]',
+          actionDelay: 1000,
           action: 'back',
         },
       ],
