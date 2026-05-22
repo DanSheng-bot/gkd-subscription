@@ -1,6 +1,7 @@
 # gkd-subscription
 
 GKD 规则订阅
+- 快照审查工具<https://i.gkd.li/>,写规则用
 
 ## 配置环境
 
