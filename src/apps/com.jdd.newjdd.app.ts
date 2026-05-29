@@ -17,7 +17,7 @@ export default defineGkdApp({
         },
         {
           fastQuery: true,
-          activityIds: 'com.jdd.newjdd.app.activity.SplashActivity',
+          activityIds: '.activity.SplashActivity',
           matches: '[visibleToUser=true]',
           matchDelay: 1000,
           action: 'back',
