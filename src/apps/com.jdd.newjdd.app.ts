@@ -38,7 +38,7 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: '.activity.PopupPushActivity',
-          matches: '[id="android:id/content"][vid=null]',
+          matches: '[id="android:id/content"][childCount=0]',
           matchDelay: 300,
           action: 'back',
         },
