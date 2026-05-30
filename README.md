@@ -1,6 +1,6 @@
 # gkd-subscription
 
-GKD 规则订阅
+GKD 规则订阅,自用
 - 快照审查工具<https://i.gkd.li/>,写规则用
 
 ## 配置环境
@@ -17,7 +17,7 @@ GKD 规则订阅
 接下来下载并初始化环境
 
 ```shell
-git clone https://github.com/username/subscription
+git clone https://github.com/DanSheng-bot/gkd-subscription.git
 cd subscription
 pnpm install
 ```
@@ -75,7 +75,7 @@ pnpm install --registry=https://registry.npmmirror.com
 
 我们使用其中的 `build_release.yml` 构建并发布
 
-打开 <https://github.com/username/subscription/actions/workflows/build_release.yml>
+打开 <https://github.com/DanSheng-bot/gkd-subscription/actions/workflows/build_release.yml>
 
 然后点击右侧的 `Run workflow` 即可运行并发布
 
