@@ -13,7 +13,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: [
         {
-          activityIds: 'com.android.launcher.Launcher',
+          activityIds: ['com.android.launcher.Launcher', 'null'],
           matches: [
             '[id="com.android.launcher:id/alertTitle"][text="添加至桌面"]',
             '[id="android:id/button2"][text="取消"]',
