@@ -7,8 +7,6 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-取消添加微件弹窗',
-      resetMatch: 'app',
-      actionMaximum: 1,
       rules: [
         {
           key: 1,
