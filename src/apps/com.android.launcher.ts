@@ -7,15 +7,13 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-取消添加微件弹窗',
-      // 开启规则
-      enable: false,
       resetMatch: 'app',
       actionMaximum: 1,
       rules: [
         {
           matches: [
             '[id="com.android.launcher:id/alertTitle"][text="添加至桌面"]',
-            '[id="android:id/button2"][text="取消"]',
+            '@[id="android:id/button2"][text="取消"]',
           ],
         },
       ],
